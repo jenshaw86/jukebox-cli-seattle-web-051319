@@ -42,5 +42,13 @@ end
 
 def run
   help
-  puts
+  user_command = ""
+  unless user_command == "exit"
+  ask_command 
+  
+end
+
+def ask_command
+  puts"Please enter a command:"
+  user_command = gets.chomp
 end
