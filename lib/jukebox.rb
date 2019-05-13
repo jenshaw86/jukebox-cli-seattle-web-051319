@@ -52,7 +52,7 @@ def run
         help
       end
       ask_command
-  end while user_response != "exit"
+  end
   exit_jukebox
 end
 
