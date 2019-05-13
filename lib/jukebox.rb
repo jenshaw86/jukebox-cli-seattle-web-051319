@@ -42,8 +42,7 @@ end
 
 def run
   help
-    puts "Please enter a command:"
-    user_response = gets.chomp
+    ask_command
     until user_response == "exit"
       if user_response == "list"
         list
@@ -52,7 +51,7 @@ def run
       elsif user_response == "help"
         help
       end
-      
+      ask_command
   end while user_response != "exit"
   exit_jukebox
 end
