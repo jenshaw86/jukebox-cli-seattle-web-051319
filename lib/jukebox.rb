@@ -45,6 +45,7 @@ def run
   begin 
     puts "Please enter a command:"
     gets.chomp
+  end while
   
 end
 
