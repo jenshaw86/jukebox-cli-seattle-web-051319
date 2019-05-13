@@ -43,7 +43,6 @@ end
 def run(songs)
   help
   user_response = ""
-  ask_command
   until user_response == "exit"
     if user_response == "list"
       list(songs)
