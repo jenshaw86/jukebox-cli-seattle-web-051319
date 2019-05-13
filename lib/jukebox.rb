@@ -42,16 +42,15 @@ end
 
 def run
   help
-    ask_command
-    until user_response == "exit"
-      if user_response == "list"
-        list
-      elsif user_response == "play"
-        play
-      elsif user_response == "help"
-        help
-      end
-      ask_command
+  ask_command
+  until user_response == "exit"
+    if user_response == "list"
+      list
+    elsif user_response == "play"
+      play
+    elsif user_response == "help"
+      help
+    end
   end
   exit_jukebox
 end
