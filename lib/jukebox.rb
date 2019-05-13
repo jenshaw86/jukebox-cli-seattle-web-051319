@@ -52,6 +52,7 @@ def run(songs)
     elsif user_response == "help"
       help
     end
+    ask_command
   end
   exit_jukebox
 end
