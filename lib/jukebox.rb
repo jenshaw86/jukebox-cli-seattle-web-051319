@@ -44,18 +44,7 @@ def run
   help
   user_command = ""
   ask_command
-  case user_command
-    when "list"
-      list
-    when "play"
-      play
-    when "help"
-      help
-    when "exit"
-      exit_jukebox
-    else
-      ask_command
-  end
+  
 end
 
 def ask_command
