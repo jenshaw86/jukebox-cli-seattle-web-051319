@@ -42,12 +42,18 @@ end
 
 def run
   help
-  user_command = ""
-  ask_command
+  puts"Please enter a command:"
+  user_command = gets.chomp
+  if user_command == "list"
+    list
+  elsif user_command == "play"
+    play
+  elsif user_command == "help"
+    help
+  elsif user_command == "exit"
+    exit_jukebox
+  end
   
 end
 
-def ask_command
-  puts"Please enter a command:"
-  user_command = gets.chomp
-end
+
