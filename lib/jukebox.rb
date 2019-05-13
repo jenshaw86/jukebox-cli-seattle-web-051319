@@ -24,6 +24,8 @@ def play(songs)
   songs.each_with_index |song, index|
     if user_choice == song || user_choice == index-1
       "Playing #{song}"
+    else
+      "Invalid input, please try again"
 end
 
 def list(songs)
