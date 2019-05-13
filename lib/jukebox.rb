@@ -51,6 +51,7 @@ def run
       play
     elsif user_response == "help"
       help
+    end
   end while user_response != "exit"
   exit_jukebox
 end
