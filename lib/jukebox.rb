@@ -45,9 +45,9 @@ def run(songs)
   ask_command
   until user_response == "exit"
     if user_response == "list"
-      list
+      list(songs)
     elsif user_response == "play"
-      play
+      play(songs)
     elsif user_response == "help"
       help
     end
