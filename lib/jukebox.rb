@@ -21,13 +21,13 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_choice = gets.chomp
+  
   songs.each_with_index do |song, index|
     if song.include?(user_choice) || user_choice == index-1
-      "Playing #{song}"
-    else
-      "Invalid input, please try again"
+      puts "Playing #{song}"
     end
   end
+  puts "Invalid input, please try again"
 end
 
 def list(songs)
