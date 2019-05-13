@@ -47,12 +47,17 @@ def run
   case user_command
     when "list"
       list
+      ask_command
     when "play"
       play
+      ask_command
     when "help"
       help
+      ask_command
     when "exit"
       exit_jukebox
+    else
+      ask_command
   
 end
 
