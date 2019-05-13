@@ -33,7 +33,11 @@ def play(songs)
 end
 
 def list(songs)
-  puts songs
+  list_number = 0
+  songs.each do |song|
+    list_number += 1
+    puts "#{list_number}. #{song}"
+  end
 end
 
 def exit_jukebox
