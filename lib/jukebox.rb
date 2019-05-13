@@ -20,16 +20,8 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  choice = gets.chomp
-  if choice.is_a? Integer && choice < songs.length
-    song_choice = songs[choice-1]
-    puts "Playing #{song_choice}"
-  elsif choice.is_a? String && songs.include?(choice)
-    song_choice = songs.find(choice)
-    puts "Playing #{song_choice}"
-  else
-    puts "Invalid input, please try again"
-  end
+  user_choice = gets.chomp
+  
 end
 
 def list(songs)
