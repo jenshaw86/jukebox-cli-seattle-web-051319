@@ -21,12 +21,13 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_choice = gets.chomp
-  songs.each_with_index |song, index|
+  songs.each_with_index do |song, index|
     if user_choice == song || user_choice == index-1
       "Playing #{song}"
     else
       "Invalid input, please try again"
     end
+  end
 end
 
 def list(songs)
