@@ -44,7 +44,7 @@ def run
   help
   user_command = ""
   ask_command
-  if user_command == 
+  case 
   
 end
 
