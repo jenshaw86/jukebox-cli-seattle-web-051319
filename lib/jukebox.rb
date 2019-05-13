@@ -45,7 +45,7 @@ def run
   user_command = ""
   ask_command
   case user_command
-  
+    when
   
 end
 
