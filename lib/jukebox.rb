@@ -43,9 +43,8 @@ end
 def run
   help
   user_command = ""
-  unless user_command == "exit"
-    ask_command 
-    
+  ask_command
+  if user_command == 
   
 end
 
